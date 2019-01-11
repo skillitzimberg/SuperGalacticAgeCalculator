@@ -26,7 +26,7 @@ class User {
 
     let age = today - birthday;
     age = age / 3.154e+10;
-    this.age = 1;
+    this.age = age;
   }
 }
 
