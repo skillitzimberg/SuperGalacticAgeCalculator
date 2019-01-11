@@ -2,6 +2,7 @@ class Planet {
   constructor(planet) {
     this.planetName = planet;
     this.conversionCoefficient;
+    // this.setConversionCoefficient();
     // this.mercury = 0.24;
     // this.venus = 0.62;
     // this.mars = 1.88;
@@ -22,12 +23,12 @@ class Planet {
     }
   }
 
-  // getAgeOnPlanet(userAge) {
-  //
-  //
-  //   let ageOnPlanet = Math.round(userAge / this.conversionCoefficient);
-  //   return 15;
-  // }
+  getAgeOnPlanet(userAge) {
+
+
+    let ageOnPlanet = Math.round(userAge / this.conversionCoefficient);
+    return 15;
+  }
 
   // getLifeExpectancyOnPlanet(planet, userAge) {
   //

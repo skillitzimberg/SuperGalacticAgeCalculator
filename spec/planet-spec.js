@@ -20,16 +20,17 @@ describe('Planet', function() {
     expect(testPlanet.conversionCoefficient).toEqual(0.24);
   });
 
-  // it('getAgeOnPlanet(userAge) should return the users age on a given planet', function() {
-  //
-  //   let birthday = new Date(1910, 8, 3);
-  //   let today = new Date();
-  //   let age = today - birthday;
-  //   age = age / 3.154e+10;
-  //   let ageOnPlanet = Math.round(age / testPlanet.conversionCoefficient);
-  //
-  //   expect(testPlanet.getAgeOnPlanet('mercury', testUser.age)).toEqual(ageOnPlanet);
-  // });
+  it('getAgeOnPlanet(userAge) should return the users age on a given planet', function() {
+    testPlanet.setConversionCoefficient();
+    
+    let birthday = new Date(1910, 8, 3);
+    let today = new Date();
+    let age = today - birthday;
+    age = age / 3.154e+10;
+    let ageOnPlanet = Math.round(age / testPlanet.conversionCoefficient);
+
+    expect(testPlanet.getAgeOnPlanet('mercury', testUser.age)).toEqual(ageOnPlanet);
+  });
 
   // it('getLifeExpectancyOnPlanet(planet, userAge) should return the users life expectancy on a given planet', function() {
   //   let testLifeExpectancy = testUser.getLifeExpectancy();
