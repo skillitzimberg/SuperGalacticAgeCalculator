@@ -129,7 +129,7 @@ Output: Fri Jan 11 2019 09:51:27 GMT-0800;
 Input: today, birthday;  
 Output: 3419488287073;
 
-* Spec 4: multiply user's age in milliseconds by 3.154e+10 to convert age in milliseconds into age in years:
+* Spec 4: divide user's age in milliseconds by 3.154e+10 to convert age in milliseconds into age in years:
 - [ ] **Expect:**  
 Input: 3419488287073, 3.154e+10;  
 Output: 108.41751068715917;
