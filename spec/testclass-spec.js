@@ -1,4 +1,5 @@
-import { TestClass } from './../src/testclass';
+import { User } from './../src/User';
+import { Calculator } from './../src/Calculator';
 
 describe('TestClass', function() {
   it('getMessage should return message', function() {

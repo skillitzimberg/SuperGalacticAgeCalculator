@@ -82,7 +82,33 @@ If a user has already surpassed the average life expectancy, return the number o
 * Create Calculator class
 
 2. Specifications:
+### Specifications for User:
+* Spec 1: instantiate a user:
+- [ ] **Expect:**  
+Input: birthday: [1910, 8, 3], sex: 'male';  
+Output: a user with properties: birthday: [1910, 8, 3], sex: 'male';
 
+* Spec 2: set user's life expectancy:
+- [ ] **Expect:**  
+Input: user.setLifeExpectancy('male');  
+Output: None;
+
+* Spec 3: get user's age:
+- [ ] **Expect:**  
+Input: user.getAge();  
+Output: 108.41751068715917;
+
+* Spec 4: get user's sex:
+- [ ] **Expect:**  
+Input: user.getSex();  
+Output: male;
+
+* Spec 5: get user's life expectancy:
+- [ ] **Expect:**  
+Input: user.getLifeExpectancy();  
+Output: 70;
+
+### Specifications for Calculator:
 * Spec 1: assign new Date(year, month, day) as user's birthday:
 - [ ] **Expect:**  
 Input: 1910, 8, 3;  
