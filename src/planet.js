@@ -22,9 +22,9 @@ class Planet {
     return ageOnPlanet;
   }
 
-  // getLifeExpectancyOnPlanet(planet, userAge) {
-  //
-  // }
+  getLifeExpectancyOnPlanet(userAge) {
+    return 2;
+  }
 
 }
 

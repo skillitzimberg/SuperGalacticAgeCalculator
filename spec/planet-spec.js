@@ -32,10 +32,10 @@ describe('Planet', function() {
     expect(testPlanet.getAgeOnPlanet(testUser.age)).toEqual(ageOnPlanet);
   });
 
-  // it('getLifeExpectancyOnPlanet(planet, userAge) should return the users life expectancy on a given planet', function() {
-  //   let testLifeExpectancy = testUser.getLifeExpectancy();
-  //   let exoPlanetLifeExpectancy = Math.round(testLifeExpectancy / 0.24);
-  //
-  //   expect(testPlanet.getLifeExpectancyOnPlanet('mercury', testUser.age)).toEqual(exoPlanetLifeExpectancy);
-  // });
+  it('getLifeExpectancyOnPlanet(planet, userAge) should return the users life expectancy on a given planet', function() {
+    let testLifeExpectancy = testUser.getLifeExpectancy();
+    let exoPlanetLifeExpectancy = Math.round(testLifeExpectancy / 0.24);
+
+    expect(testPlanet.getLifeExpectancyOnPlanet(testUser.age)).toEqual(exoPlanetLifeExpectancy);
+  });
 });

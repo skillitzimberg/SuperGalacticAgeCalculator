@@ -138,7 +138,7 @@ Output: 3419488287073;
 Input: 3419488287073, 3.154e+10;  
 Output: 108.41751068715917;
 
-### Specifications for Calculator:
+### Specifications for Planet:
 
 * Spec 5: get a planet's year coefficient:
 - [ ] **Expect:**  
