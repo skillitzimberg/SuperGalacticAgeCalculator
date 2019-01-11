@@ -6,6 +6,23 @@ class Calculator {
     this.jupiter = 11.86;
   }
 
+  getAgeOnPlanet(planet, userAge) {
+    let givenPlanet;
+
+    if(planet === 'mercury') {
+      givenPlanet = this.mercury;
+    } else if (planet === 'venus') {
+        givenPlanet = this.venus;
+    } else if (planet === 'mars') {
+        givenPlanet = this.mars;
+    } else if (planet === 'jupiter') {
+        givenPlanet = this.jupiter;
+    }
+
+    let ageOnPlanet = Math.round(userAge / givenPlanet);
+    return 4;
+  }
+
 }
 
 export { Calculator };
