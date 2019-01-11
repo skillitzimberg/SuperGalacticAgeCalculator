@@ -7,6 +7,7 @@ describe('Planet', function() {
 
   beforeEach(function() {
     testPlanet = new Planet('Mercury');
+    testPlanet.setConversionCoefficient();
     testUser = new User([1910, 8, 3], 'male');
     testUser.setAge();
   });
@@ -16,7 +17,7 @@ describe('Planet', function() {
   });
 
   it('setConversionCoefficient() should set the planet Earth-to-Planet-Year coefficient', function() {
-    testPlanet.setConversionCoefficient();
+
     expect(testPlanet.conversionCoefficient).toEqual(0.24);
   });
 
@@ -32,10 +33,10 @@ describe('Planet', function() {
     expect(testPlanet.getAgeOnPlanet(testUser.age)).toEqual(ageOnPlanet);
   });
 
-  it('getLifeExpectancyOnPlanet(planet, userAge) should return the users life expectancy on a given planet', function() {
+  it('getLifeExpectancyOnPlanet(userLifeExpectancy) should return the users life expectancy on a given planet', function() {
     let testLifeExpectancy = testUser.getLifeExpectancy();
     let exoPlanetLifeExpectancy = Math.round(testLifeExpectancy / 0.24);
 
-    expect(testPlanet.getLifeExpectancyOnPlanet(testUser.age)).toEqual(exoPlanetLifeExpectancy);
+    expect(testPlanet.getLifeExpectancyOnPlanet(testLifeExpectancy)).toEqual(exoPlanetLifeExpectancy);
   });
 });

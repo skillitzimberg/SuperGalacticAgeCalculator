@@ -1,3 +1,5 @@
+import { User } from './../src/User';
+
 class Planet {
   constructor(planet) {
     this.planetName = planet;
@@ -17,13 +19,14 @@ class Planet {
   }
 
   getAgeOnPlanet(userAge) {
-    debugger;
     let ageOnPlanet = Math.round(userAge / this.conversionCoefficient);
     return ageOnPlanet;
   }
 
-  getLifeExpectancyOnPlanet(userAge) {
-    return 2;
+  getLifeExpectancyOnPlanet(userLifeExpectancy) {
+    debugger;
+    let exoPlanetLifeExpectancy = Math.round(userLifeExpectancy / this.conversionCoefficient);
+    return exoPlanetLifeExpectancy;
   }
 
 }
