@@ -8,6 +8,7 @@ describe('Calculator', function() {
   beforeEach(function() {
     testCalculator = new Calculator();
     testUser = new User([1910, 8, 3], 'male');
+    testUser.setAge();
   });
 
   it('construcotr should instantiate a calculator', function() {
@@ -23,6 +24,7 @@ describe('Calculator', function() {
     let age = today - birthday;
     age = age / 3.154e+10;
     let ageOnPlanet = Math.round(age / newCalculator.mercury);
+
 
     expect(newCalculator.getAgeOnPlanet('mercury', testUser.age)).toEqual(ageOnPlanet);
   });

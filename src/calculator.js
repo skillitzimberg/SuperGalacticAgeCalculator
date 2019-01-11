@@ -7,6 +7,7 @@ class Calculator {
   }
 
   getAgeOnPlanet(planet, userAge) {
+    debugger;
     let givenPlanet;
 
     if(planet === 'mercury') {
@@ -20,7 +21,7 @@ class Calculator {
     }
 
     let ageOnPlanet = Math.round(userAge / givenPlanet);
-    return 4;
+    return ageOnPlanet;
   }
 
 }

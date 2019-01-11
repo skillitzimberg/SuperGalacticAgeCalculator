@@ -20,7 +20,6 @@ class User {
   }
 
   setAge() {
-    debugger;
     let birthday = new Date(this.birthYear, this.birthMonth, this.birthDay);
     let today = new Date();
 
