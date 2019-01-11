@@ -93,17 +93,22 @@ Output: a user with properties: birthday: [1910, 8, 3], sex: 'male';
 Input: user.setLifeExpectancy('male');  
 Output: None;
 
-* Spec 3: get user's age:
+* Spec 3: set user's age:
+- [ ] **Expect:**  
+Input: birthday: [1910, 8, 3];  
+Output: 108.41751068715917;
+
+* Spec 4: get user's age:
 - [ ] **Expect:**  
 Input: user.getAge();  
 Output: 108.41751068715917;
 
-* Spec 4: get user's sex:
+* Spec 5: get user's sex:
 - [ ] **Expect:**  
 Input: user.getSex();  
 Output: male;
 
-* Spec 5: get user's life expectancy:
+* Spec 6: get user's life expectancy:
 - [ ] **Expect:**  
 Input: user.getLifeExpectancy();  
 Output: 70;
