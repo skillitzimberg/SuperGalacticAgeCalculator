@@ -17,4 +17,11 @@ describe('User', function() {
     let newUser = new User([1910, 8, 3], 'male');
     expect(newUser.getLifeExpectancy()).toEqual(70);
   });
+
+  it('setAge() should set age', function() {
+    let newUser = new User([1910, 8, 3], 'male');
+    testUser.setAge();
+    newUser.setAge();
+    expect(newUser.age).toEqual(testUser.age);
+  });
 });
