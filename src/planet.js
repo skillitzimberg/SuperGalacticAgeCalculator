@@ -12,7 +12,7 @@ class Planet {
 
   setConversionCoefficient() {
     if(this.planetName === 'Mercury') {
-      this.conversionCoefficient = 2;
+      this.conversionCoefficient = 0.24;
     } else if (this.planetName === 'Venus') {
       this.conversionCoefficient = 0.62;
     } else if (this.planetName === 'Mars') {
