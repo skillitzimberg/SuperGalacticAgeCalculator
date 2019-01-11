@@ -1,6 +1,6 @@
 class Planet {
   constructor(planet) {
-    this.planetName = 'planet';
+    this.planetName = planet;
     this.conversionCoefficient;
     // this.mercury = 0.24;
     // this.venus = 0.62;
