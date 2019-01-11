@@ -39,7 +39,7 @@ YourProjectName
     └── styles.css
 ```
 ## Using SuperGalacticAgeCalculator
-Clone the code from [GitHub](https://github.com/skillitzimberg/SuperGalacticAgeCalculator).
+Clone the code from [GitHub](https://github.com/skillitzimberg/Template_JS).
 
 While following this set up guide, replace both the brackets - [] - and the content between them with the information relevant to your situation. This is just an example guide.
 
