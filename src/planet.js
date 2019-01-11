@@ -10,24 +10,25 @@ class Planet {
 
   }
 
-  // getAgeOnPlanet(planet, userAge) {
-  //   debugger;
-  //   let givenPlanet;
+  setConversionCoefficient() {
+    if(this.planetName === 'Mercury') {
+      this.conversionCoefficient = 2;
+    } else if (this.planetName === 'Venus') {
+      this.conversionCoefficient = 0.62;
+    } else if (this.planetName === 'Mars') {
+      this.conversionCoefficient = 1.88;
+    } else if (this.planetName === 'Jupiter') {
+      this.conversionCoefficient = 11.86;
+    }
+  }
+
+  // getAgeOnPlanet(userAge) {
   //
-  //   if(planet === 'mercury') {
-  //     givenPlanet = this.mercury;
-  //   } else if (planet === 'venus') {
-  //       givenPlanet = this.venus;
-  //   } else if (planet === 'mars') {
-  //       givenPlanet = this.mars;
-  //   } else if (planet === 'jupiter') {
-  //       givenPlanet = this.jupiter;
-  //   }
   //
-  //   let ageOnPlanet = Math.round(userAge / givenPlanet);
-  //   return ageOnPlanet;
+  //   let ageOnPlanet = Math.round(userAge / this.conversionCoefficient);
+  //   return 15;
   // }
-  //
+
   // getLifeExpectancyOnPlanet(planet, userAge) {
   //
   // }
