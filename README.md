@@ -88,6 +88,11 @@ If a user has already surpassed the average life expectancy, return the number o
 Input: birthday: [1910, 8, 3], sex: 'male';  
 Output: a user with properties: birthday: [1910, 8, 3], sex: 'male';
 
+* Spec 7: use the user's sex to find life expectancy:
+- [ ] **Expect:**  
+Input: male;  
+Output: 70;
+
 * Spec 2: set user's life expectancy:
 - [ ] **Expect:**  
 Input: user.setLifeExpectancy('male');  
@@ -113,7 +118,6 @@ Output: male;
 Input: user.getLifeExpectancy();  
 Output: 70;
 
-### Specifications for Calculator:
 * Spec 1: assign new Date(year, month, day) as user's birthday:
 - [ ] **Expect:**  
 Input: 1910, 8, 3;  
@@ -134,6 +138,8 @@ Output: 3419488287073;
 Input: 3419488287073, 3.154e+10;  
 Output: 108.41751068715917;
 
+### Specifications for Calculator:
+
 * Spec 5: get a planet's year coefficient:
 - [ ] **Expect:**  
 Input: Mercury;  
@@ -143,11 +149,6 @@ Output: 0.24;
 - [ ] **Expect:**  
 Input: 108.41751068715917, 0.24;  
 Output: 451.7396278631632;
-
-* Spec 7: use the user's sex to find life expectancy:
-- [ ] **Expect:**  
-Input: male;  
-Output: 70;
 
 * Spec 8: divide life expectancy in years by the planet's year coefficient to get the user's life expectancy on that planet:
 - [ ] **Expect:**  

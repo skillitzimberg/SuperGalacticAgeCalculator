@@ -1,5 +1,4 @@
 import { User } from './../src/User';
-// import { Calculator } from './../src/Calculator';
 
 describe('User', function() {
   var testUser;
@@ -20,6 +19,7 @@ describe('User', function() {
 
   it('setAge() should set age', function() {
     let newUser = new User([1910, 8, 3], 'male');
+
     let birthday = new Date(1910, 8, 3);
     let today = new Date();
     let age = today - birthday;
