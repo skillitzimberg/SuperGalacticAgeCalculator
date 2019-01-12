@@ -29,8 +29,9 @@ class Planet {
   }
 
   getRemainingYears(userAge, userLifeExpectancy) {
-
-    return 4000;
+    let yearsLeft = userLifeExpectancy - userAge;
+    yearsLeft = Math.round(yearsLeft / this.conversionCoefficient);
+    return yearsLeft;
   }
 
   pastExpirationDate(userAge, userLifeExpectancy) {
