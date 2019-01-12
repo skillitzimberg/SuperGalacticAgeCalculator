@@ -40,11 +40,11 @@ describe('Planet', function() {
     expect(testPlanet.getLifeExpectancyOnPlanet(testLifeExpectancy)).toEqual(exoPlanetLifeExpectancy);
   });
 
-  it('pastExpirationDate() should return how much older the user is than their life expectancy on a given planet', function() {
+  it('pastExpirationDate(userAge, userLifeExpectancy) should return how much older the user is than their life expectancy on a given planet', function() {
     let testLifeExpectancy = testUser.getLifeExpectancy();
     let yearsBeyond = testUser.age - testLifeExpectancy;
     yearsBeyond = Math.round(yearsBeyond / 0.24);
 
-    expect(testPlanet.pastExpirationDate()).toEqual(yearsBeyond);
+    expect(testPlanet.pastExpirationDate(testUser.age, testLifeExpectancy)).toEqual(yearsBeyond);
   });
 });

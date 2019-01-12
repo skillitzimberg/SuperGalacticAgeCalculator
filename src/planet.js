@@ -24,13 +24,14 @@ class Planet {
   }
 
   getLifeExpectancyOnPlanet(userLifeExpectancy) {
-    debugger;
     let exoPlanetLifeExpectancy = Math.round(userLifeExpectancy / this.conversionCoefficient);
     return exoPlanetLifeExpectancy;
   }
 
-  pastExpirationDate() {
-    return 9;
+  pastExpirationDate(userAge, userLifeExpectancy) {
+    let yearsBeyond = userAge - userLifeExpectancy;
+    yearsBeyond = Math.round(yearsBeyond / this.conversionCoefficient);
+    return yearsBeyond;
   }
 
 }
