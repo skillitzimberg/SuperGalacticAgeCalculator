@@ -29,6 +29,10 @@ class Planet {
     return exoPlanetLifeExpectancy;
   }
 
+  pastExpirationDate() {
+    return 9;
+  }
+
 }
 
 export { Planet };
