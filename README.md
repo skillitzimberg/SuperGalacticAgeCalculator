@@ -24,8 +24,13 @@ If a user has already surpassed the average Earth life expectancy, it will deter
 ## Setup/Installation
 Clone the code from [GitHub](https://github.com/skillitzimberg/SuperGalacticAgeCalculator).
 
+In your preferred terminal/console, cd into the directory and run:
+```
+$npm install
+```
+
 ## Resources
-[ABOUTTEMPLATEJS](./ABOUTTEMPLATE.md)  
+[ABOUT TEMPLATE JS](./ABOUTTEMPLATE.md)  
 
 ## Planning
 ### The Assignment:
@@ -88,84 +93,84 @@ If a user has already surpassed the average life expectancy, return the number o
 Input: birthday: [1910, 8, 3], sex: 'male';  
 Output: a user with properties: birthday: [1910, 8, 3], sex: 'male';
 
-* Spec 7: use the user's sex to find life expectancy:
+* Spec 2: use the user's sex to find life expectancy:
 - [x] **Expect:**  
 Input: male;  
 Output: 70;
 
-* Spec 2: set user's life expectancy:
+* Spec 3: set user's life expectancy:
 - [x] **Expect:**  
 Input: user.setLifeExpectancy('male');  
 Output: None;
 
-* Spec 3: set user's age:
+* Spec 4: set user's age:
 - [x] **Expect:**  
 Input: birthday: [1910, 8, 3];  
 Output: 108.41751068715917;
 
-* Spec 4: get user's age:
+* Spec 5: get user's age:
 - [x] **Expect:**  
 Input: user.getAge();  
 Output: 108.41751068715917;
 
-* Spec 5: get user's sex:
+* Spec 6: get user's sex:
 - [ ] **Expect:**  
 Input: user.getSex();  
 Output: male;
 
-* Spec 6: get user's life expectancy:
+* Spec 7: get user's life expectancy:
 - [x] **Expect:**  
 Input: user.getLifeExpectancy();  
 Output: 70;
 
-* Spec 1: assign new Date(year, month, day) as user's birthday:
+* Spec 8: assign new Date(year, month, day) as user's birthday:
 - [ ] **Expect:**  
 Input: 1910, 8, 3;  
 Output: Sat Sep 03 1910 00:00:00 GMT-0800 (Pacific Daylight Time);
 
-* Spec 2: assign new Date() as today:
+* Spec 9: assign new Date() as today:
 - [x] **Expect:**  
 Input: new Date();  
 Output: Fri Jan 11 2019 09:51:27 GMT-0800;
 
-* Spec 3: subtract user's birthday from today to get their age in milliseconds:
+* Spec 10: subtract user's birthday from today to get their age in milliseconds:
 - [x] **Expect:**  
 Input: today, birthday;  
 Output: 3419488287073;
 
-* Spec 4: divide user's age in milliseconds by 3.154e+10 to convert age in milliseconds into age in years:
+* Spec 11: divide user's age in milliseconds by 3.154e+10 to convert age in milliseconds into age in years:
 - [x] **Expect:**  
 Input: 3419488287073, 3.154e+10;  
 Output: 108.41751068715917;
 
 ### Specifications for Planet:
-* Spec 5: get a planet's year coefficient:
+* Spec 12: get a planet's year coefficient:
 - [x] **Expect:**  
 Input: Mercury;  
 Output: 0.24;
 
-* Spec 6: divide the user's age in years by a planet's year coefficient to get the user's age on that planet:
+* Spec 13: divide the user's age in years by a planet's year coefficient to get the user's age on that planet:
 - [x] **Expect:**  
 Input: 108.41751068715917, 0.24;  
 Output: 451.7396278631632;
 
-* Spec 8: divide life expectancy in years by the planet's year coefficient to get the user's life expectancy on that planet:
+* Spec 14: divide life expectancy in years by the planet's year coefficient to get the user's life expectancy on that planet:
 - [x] **Expect:**  
 Input: 70, 0.24;  
 Output: 291.6666666666667;
 
 #### if the user's age is greater than their life expectancy:
-* Spec 9: subtract the user's life expectancy from their age to find how long they have lived past their expire date:
+* Spec 15: subtract the user's life expectancy from their age to find how long they have lived past their expire date:
 - [x] **Expect:**  
 Input: 108.41751068715917, 70;  
 Output: 38.417510687159165;
 
-* Spec 10: divide the difference by the planet's year coefficient to find how long they have lived past their expire date on that planet:
+* Spec 16: divide the difference by the planet's year coefficient to find how long they have lived past their expire date on that planet:
 - [x] **Expect:**  
 Input: 38.417510687159165, 0.24;  
 Output: 160.07296119649652;
 
-* Spec 11: divide the difference by the planet's year coefficient to find how long they have lived past their expire date on that planet:
+* Spec 17: divide the difference by the planet's year coefficient to find how long they have lived past their expire date on that planet:
 - [x] **Expect:**  
 Input: 38.417510687159165, 0.24;  
 Output: 160.07296119649652;
