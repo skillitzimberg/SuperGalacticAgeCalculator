@@ -28,6 +28,11 @@ class Planet {
     return exoPlanetLifeExpectancy;
   }
 
+  getRemainingYears(userAge, userLifeExpectancy) {
+
+    return 4000;
+  }
+
   pastExpirationDate(userAge, userLifeExpectancy) {
     let yearsBeyond = userAge - userLifeExpectancy;
     yearsBeyond = Math.round(yearsBeyond / this.conversionCoefficient);

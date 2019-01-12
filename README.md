@@ -139,7 +139,6 @@ Input: 3419488287073, 3.154e+10;
 Output: 108.41751068715917;
 
 ### Specifications for Planet:
-
 * Spec 5: get a planet's year coefficient:
 - [x] **Expect:**  
 Input: Mercury;  
@@ -157,12 +156,17 @@ Output: 291.6666666666667;
 
 #### if the user's age is greater than their life expectancy:
 * Spec 9: subtract the user's life expectancy from their age to find how long they have lived past their expire date:
-- [ ] **Expect:**  
+- [x] **Expect:**  
 Input: 108.41751068715917, 70;  
 Output: 38.417510687159165;
 
-* Spec 10: divide the difference by the planet's year coefficient to find how long they have lived past their expire date:
-- [ ] **Expect:**  
+* Spec 10: divide the difference by the planet's year coefficient to find how long they have lived past their expire date on that planet:
+- [x] **Expect:**  
+Input: 38.417510687159165, 0.24;  
+Output: 160.07296119649652;
+
+* Spec 11: divide the difference by the planet's year coefficient to find how long they have lived past their expire date on that planet:
+- [x] **Expect:**  
 Input: 38.417510687159165, 0.24;  
 Output: 160.07296119649652;
 
