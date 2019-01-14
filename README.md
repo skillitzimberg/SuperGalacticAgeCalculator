@@ -5,7 +5,7 @@
 ## Table of contents
 
 **[Description](#description)**<br>
-**[Installation Instructions](#setup/installation)**<br>
+**[Setup/Installation](#setup/installation)**<br>
 **[Resources](#resources)**<br>
 **[Planning](#planning)**<br>
 **[Specifications](#specifications)**<br>
@@ -86,7 +86,7 @@ If a user has already surpassed the average life expectancy, return the number o
 * Create User class
 * Create Calculator class
 
-2. Specifications:
+## Specifications
 ### Specifications for User:  
 
 ##### Spec 1: instantiate a user:
@@ -213,7 +213,7 @@ Scott Bergler :: commandinghands@gmail.com
 
 HTML, CSS, Json, dotnet.
 
-### License
+## License
 
 Licensed under the MIT license.
 

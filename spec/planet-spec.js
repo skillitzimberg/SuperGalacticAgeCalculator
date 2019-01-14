@@ -4,12 +4,14 @@ import { User } from './../src/User';
 describe('Planet', function() {
   let testPlanet;
   let testUser;
+  let testLifeExpectancy:
 
   beforeEach(function() {
     testPlanet = new Planet('Mercury');
     testPlanet.setConversionCoefficient();
     testUser = new User([1910, 8, 3], 'male');
     testUser.setAge();
+    testUser.getLifeExpectancy();
   });
 
   it('constructor(planet) should instantiate a planet', function() {
@@ -34,14 +36,13 @@ describe('Planet', function() {
   });
 
   it('getLifeExpectancyOnPlanet(userLifeExpectancy) should return the users life expectancy on a given planet', function() {
-    let testLifeExpectancy = testUser.getLifeExpectancy();
+    // let testLifeExpectancy = testUser.getLifeExpectancy();
     let exoPlanetLifeExpectancy = Math.round(testLifeExpectancy / 0.24);
 
     expect(testPlanet.getLifeExpectancyOnPlanet(testLifeExpectancy)).toEqual(exoPlanetLifeExpectancy);
   });
 
   it('getRemainingYears(userAge, userLifeExpectancy) should return the users remaining years of life on a given planet', function() {
-    let testLifeExpectancy = testUser.getLifeExpectancy();
     let yearsLeft = testLifeExpectancy - testUser.age;
     yearsLeft = Math.round(yearsLeft / 0.24);
 
@@ -49,7 +50,6 @@ describe('Planet', function() {
   });
 
   it('pastExpirationDate(userAge, userLifeExpectancy) should return how much older the user is than their life expectancy on a given planet', function() {
-    let testLifeExpectancy = testUser.getLifeExpectancy();
     let yearsBeyond = testUser.age - testLifeExpectancy;
     yearsBeyond = Math.round(yearsBeyond / 0.24);
 

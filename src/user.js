@@ -7,11 +7,11 @@ class User {
     this.age;
     this.lifeExpectancy;
 
-    if(sex === 'male') {
-      this.lifeExpectancy = 70;
+    if(sex === 'female') {
+      this.lifeExpectancy = 74;
     }
     else {
-      this.lifeExpectancy = 74;
+      this.lifeExpectancy = 70;
     }
   }
 
